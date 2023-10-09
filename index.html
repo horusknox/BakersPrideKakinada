@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baker's Pride Kakinada</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+    body {
+        font-family: 'Alice';
+        background-color: #dcb672;
+        color: #2c3e50;
+        margin: 0;
+        padding: 0;
+    }
+
+        header {
+            background-color: #dcb672; 
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: 20px;
+            border-radius: 15px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .social-button {
+            padding: 90px; /* Increased padding for larger buttons */
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 15px;
+            margin-bottom: 5px; /* Space between buttons */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .instagram {
+            background-image: url("https://media1.giphy.com/media/PTTY4h2VkBl7cfoBuT/200w.gif?cid=6c09b952xosq6o2ubznduepau503t0c6ls19706l85qm2qra&ep=v1_gifs_search&rid=200w.gif&ct=g");
+        }
+
+        .whatsapp {
+            background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/79828727383839.56364425d6616.gif");
+        }
+
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .loading {
+            width: 80px;
+            height: 80px;
+            border: 8px solid #fff;
+            border-radius: 50%;
+            border-top: 8px solid #2c3e50; /* Header color */
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Logo styling */
+        .logo {
+            max-width: 100px;
+            margin-right: 20px;
+            border-radius: 15px;
+        }  
+    hr {
+        height: 2px; /* Set the height of the line */
+        border: none; /* Remove default border */
+        border-top: 2px dotted #2c3e50; /* Adjust the color and spacing */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+        </style>
+
+</head>
+<body>
+
+    <!-- Loading Animation -->
+    <div class="loading-container">
+        <div class="loading"><i class="bi bi-cake"></i></div>
+    </div>
+
+    <!-- Content (hidden while loading) -->
+    <div id="content" style="display:none;">
+
+        <!-- Header -->
+        <header>
+            <img src="baker's pride kainada logo.png" alt="Logo" class="logo"> <!-- Replace with your actual logo -->
+            <h1>Baker's Pride Kakinada</h1>
+        </header>
+
+        <hr>
+
+        <!-- Social Buttons -->
+        <div class="social-buttons">
+            <h2>Follow Us on Instagram</h2>
+            <a href="https://www.instagram.com/horusknox_smthin/" class="btn btn-primary instagram social-button">Instagram</a>
+            <h2>We also take orders on WhatsApp !!</h2>
+            <a href="https://wa.me/9381611501" class="btn btn-success whatsapp social-button">WhatsApp</a>
+        </div>
+        
+    
+    </div>
+
+    <!-- Bootstrap JS and jQuery (Make sure to include these after the content) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script to hide loading animation and show content when the page is fully loaded -->
+    <script>
+        $(document).ready(function(){
+            // Hide loading animation
+            $('.loading-container').hide();
+            // Show content
+            $('#content').show();
+        });
+    </script>
+</body>
+</html>
